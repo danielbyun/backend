@@ -1,0 +1,9 @@
+<h1>results page</h1>
+
+<% movieData.data.movies.forEach(function(movies){ %>
+    <a target="_blank" href=<%= movies.url %>><img src=<%= movies.medium_cover_image %>></a>
+    <li><%= movies.title %> - <%= movies.year %> </li>
+    <p><%= movies.synopsis %> - rated <%= movies.mpa_rating %></p>
+<% }) %>
+
+<a href="/">Search Again!</a>
